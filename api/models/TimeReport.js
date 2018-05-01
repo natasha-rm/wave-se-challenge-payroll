@@ -1,7 +1,7 @@
 /**
  * TimeReport.js
  * 
- * @description: Log of hours tracked for each employee
+ * @description: Log of hours tracked for each employee. This is an archive of the CSV input
  */
 
 

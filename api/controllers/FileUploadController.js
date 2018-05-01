@@ -1,7 +1,7 @@
 /**
  * CsvfileController
  *
- * @description :: Server-side actions for handling CSV file upload.
+ * @description :: Controller for handling CSV file upload.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 

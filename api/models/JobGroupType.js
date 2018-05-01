@@ -1,7 +1,7 @@
 /**
  * JobGroupType.js
  * 
- * @description: Supported job groups
+ * @description: Supported job groups. This table stores the hours rate per job group
  */
 
 

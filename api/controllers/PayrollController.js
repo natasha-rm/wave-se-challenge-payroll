@@ -1,7 +1,7 @@
 /**
  * PayrollController
  *
- * @description :: Server-side actions for handling payroll processing.
+ * @description :: Controller for managing the result view.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 

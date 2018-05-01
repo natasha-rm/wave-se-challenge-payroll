@@ -148,5 +148,6 @@ function getPayPeriodDate(work_date, dayOfMonth) {
 }
 
 function getAdditionalAmount(work_hours, pay_per_hour) {
-    return work_hours * pay_per_hour
+    // convert to cents, then convert back to dollar amount
+    return (work_hours * pay_per_hour*100)/100  
 }

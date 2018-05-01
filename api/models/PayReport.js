@@ -1,7 +1,7 @@
 /**
  * PayReport.js
  * 
- * @description: Report for payroll
+ * @description: Report for payroll. This table contains the pay for employees in different pay periods
  */
 
 
