@@ -1,0 +1,59 @@
+<!--
+This is the homepage.
+-->
+
+<div class="default-page">
+    <div class="header">
+        <h1 id="main-title" class="container">
+            <%= __('A simple payroll app') %>
+        </h1>
+    </div>
+
+    <div class="main container clearfix"> <!--</div>main container clearfix">-->
+        <div>
+            <form class="form-inline" id="uploadForm" enctype="multipart/form-data" action="/upload" method="post">
+                <div class="form-group mx-sm-3 mb-2">
+                    <input type="file" name="uploadFile" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2" value="submit">Submit</button>
+            </form>
+        </div>
+        <br>
+        <div>
+            <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="button" class="btn btn-primary" value="Refresh Results" onClick="window.location.reload()">
+                    </div>
+            </form>
+                
+        </div>
+        <br>
+        <form action="/clearDB" method="post">
+            <input type="submit" class="btn btn-primary" name="resetDB" value="Reset DB" />
+        </form>
+        
+        <br>
+
+        <table class="table table-striped">
+            <tr>
+                <th>Employee ID</th>
+                <th>Pay Period</th>
+                <th>Amount Paid</th>
+            </tr>
+            <% _.each(reports, function (report) { %>
+                <tr>
+                    <td>
+                        <%= report.employee_id %>
+                    </td>
+                    <td>
+                        <%= report.pay_period %>
+                    </td>
+                    <td>
+                        <%= report.currency_type + report.amount %>
+                    </td>
+                </tr>
+                <% }) %>
+        </table>
+
+    </div>
+</div>

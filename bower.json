@@ -1,0 +1,17 @@
+{
+  "name": "sails-bower",
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "styles": "dist/css/*.min.css",
+      "fonts": "dist/fonts/*",
+      "js/dependencies": "dist/js/bootstrap.min.js"
+    },
+    "jquery": {
+      "js/dependencies": "dist/jquery.min.js"
+    }
+  }
+}
